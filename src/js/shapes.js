@@ -111,22 +111,22 @@ const view = {
         model.createCanvas();
         model.drawShape();
 
-        btnSpeedDecrease.addEventListener("click", function() {
+        btnSpeedDecrease.addEventListener("click", () => {
             if (shapesSpeed > 1) { shapesSpeed -= 1; }
         });
-        btnSpeedIncrease.addEventListener("click", function() {
+        btnSpeedIncrease.addEventListener("click", () => {
             shapesSpeed += 1;
         });
         
-        btnGravityDecrease.addEventListener("click", function() {
+        btnGravityDecrease.addEventListener("click", () => {
             if (gravity > 1) { gravity -= 1; }
         });
-        btnGravityIncrease.addEventListener("click", function() {
+        btnGravityIncrease.addEventListener("click", () => {
             gravity += 1;
         });
 
         let counter;
-        const shapesSpeedInterval = function() {
+        const shapesSpeedInterval = () => {
             counter = 1000 / shapesSpeed;
             setTimeout(shapesSpeedInterval, counter);
             model.drawShape();
