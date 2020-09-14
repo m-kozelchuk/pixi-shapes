@@ -1,0 +1,44 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	<div id="Game">
+		<div class="controls controls_top">
+			<label for="ShapesAmount" class="controls__item">
+				Number of current shapes:
+				<input id="ShapesAmount" type="text" value="0">
+			</label>
+			<label for="SurfaceArea" class="controls__item">
+				Surface area occupied by shapes:
+				<input id="SurfaceArea" type="text" value="">
+			</label>
+		</div>
+		<div id="MainArea"></div>
+		<div class="controls controls_bottom">
+			<div class="controls__wrap">
+				<div class="controls__btns">
+					<button id="BtnSpeedDecrease" class="btn btn_decrease">–</button>
+					<button id="BtnSpeedIncrease" class="btn btn_increase">+</button>
+				</div>
+				<label for="ShapesSpeed" class="controls__item">
+					Number of shapes per sec:
+					<input id="ShapesSpeed" type="text" value="0">
+				</label>
+			</div>
+			<div class="controls__wrap">
+				<div class="controls__btns">
+					<button id="BtnGravityDecrease" class="btn btn_decrease">–</button>
+					<button id="BtnGravityIncrease" class="btn btn_increase">+</button>
+				</div>
+				<label for="Gravity" class="controls__item">
+					Gravity value:
+					<input id="Gravity" type="text" value="0">
+				</label>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

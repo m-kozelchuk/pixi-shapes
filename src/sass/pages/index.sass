@@ -1,0 +1,63 @@
+#Game
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 80vw
+    height: 90vh
+    transform: translate(-50%, -50%)
+
+#MainArea 
+    canvas
+        border: 1px solid black
+
+.controls 
+    display: flex
+    height: 5vh
+
+    &_top 
+        align-items: flex-end
+
+    &__item 
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 20vw
+        min-width: 300px
+        height: 50px
+        border: 1px solid black
+        padding: 10px
+
+        input
+            width: 20%
+            margin-left: 10px
+            font-size: 14px
+
+    &__wrap 
+        display: flex
+        align-items: center
+        padding: 16px 20px 0 0
+
+        .controls__item
+            min-width: 180px
+
+    &__btns
+        display: flex
+        align-items: center
+        width: 100px
+        height: 50px
+        margin-right: 10px
+        border-radius: 20px
+        border: 1px solid black
+
+
+
+
+.btn 
+    width: 50%
+    height: 100%
+    background-color: transparent
+    font-size: 36px
+    color: #1099bb
+
+    &_decrease
+        border-right: 1px solid black
